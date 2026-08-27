@@ -1,0 +1,97 @@
+@import '@fontsource-variable/space-grotesk';
+@import '@fontsource/ibm-plex-mono/400.css';
+@import '@fontsource/ibm-plex-mono/500.css';
+@import '@fontsource/silkscreen/400.css';
+
+:root {
+  --paper: #f6f4ed;
+  --white: #ffffff;
+  --ink: #0b1830;
+  --ink-soft: #34415a;
+  --muted: #6f7787;
+  --line: #cad0d7;
+  --line-strong: #8791a1;
+  --blue: #168bea;
+  --blue-soft: #dcefff;
+  --yellow: #ffc735;
+  --yellow-soft: #fff0ad;
+  --green: #39bd83;
+  --green-soft: #d6f4e6;
+  --coral: #ff6f61;
+  --coral-soft: #ffe0db;
+  --purple: #6557e8;
+  --purple-soft: #e8e4ff;
+  --error: #c33d46;
+  --focus: #075da4;
+  --scrim: rgb(11 24 48 / 60%);
+  --font-body: 'Space Grotesk Variable', 'Segoe UI', sans-serif;
+  --font-data: 'IBM Plex Mono', Consolas, monospace;
+  --font-pixel: 'Silkscreen', 'IBM Plex Mono', monospace;
+  --sidebar-width: 254px;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  overflow-x: clip;
+  background: var(--paper);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+img,
+svg {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p,
+blockquote {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-style: normal;
+}
+
+::selection {
+  color: var(--white);
+  background: var(--ink);
+}

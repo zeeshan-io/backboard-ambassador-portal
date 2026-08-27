@@ -1,0 +1,129 @@
+@import '@fontsource-variable/space-grotesk';
+@import '@fontsource/ibm-plex-mono/400.css';
+@import '@fontsource/ibm-plex-mono/500.css';
+@import '@fontsource/silkscreen/400.css';
+
+:root {
+  --color-ink-950: #03080d;
+  --color-ink-900: #061018;
+  --color-ink-850: #09141e;
+  --color-ink-800: #0c1924;
+  --color-ink-750: #10202c;
+  --color-ink-700: #162936;
+  --color-ice-50: #f4f8fa;
+  --color-ice-100: #e6f3f7;
+  --color-ice-200: #c9e6ee;
+  --color-text-primary: #f4f8fa;
+  --color-text-secondary: #9cb1bd;
+  --color-text-muted: #68808d;
+  --color-accent: #1494ff;
+  --color-accent-bright: #42b6ff;
+  --color-accent-soft: #7fd9ff;
+  --color-accent-deep: #0876ca;
+  --color-rink-red: #ff5b64;
+  --color-rink-yellow: #ffd54a;
+  --color-success: #5fe0a4;
+  --color-warning: #ffb84a;
+  --color-error: #ff6d75;
+  --color-focus: #b8edff;
+  --color-border: rgb(158 199 217 / 14%);
+  --color-border-strong: rgb(158 199 217 / 24%);
+  --color-panel: rgb(12 25 36 / 88%);
+  --color-panel-solid: #0c1924;
+  --color-track: rgb(156 196 214 / 16%);
+  --color-scrim: rgb(1 6 10 / 72%);
+  --color-shadow: rgb(0 0 0 / 35%);
+  --font-body: 'Space Grotesk Variable', 'Segoe UI', sans-serif;
+  --font-data: 'IBM Plex Mono', Consolas, monospace;
+  --font-pixel: 'Silkscreen', 'IBM Plex Mono', monospace;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --sidebar-width: 248px;
+  color: var(--color-text-primary);
+  background: var(--color-ink-900);
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--color-ink-900);
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    linear-gradient(90deg, transparent 49.9%, rgb(20 148 255 / 2.5%) 50%, transparent 50.1%),
+    var(--color-ink-900);
+  overflow-x: clip;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+img,
+svg {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  font-style: normal;
+}
+
+button {
+  border: 0;
+}
+
+::selection {
+  color: var(--color-ink-950);
+  background: var(--color-accent-soft);
+}

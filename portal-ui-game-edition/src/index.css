@@ -1,0 +1,97 @@
+@import '@fontsource-variable/space-grotesk';
+@import '@fontsource/ibm-plex-mono/400.css';
+@import '@fontsource/ibm-plex-mono/500.css';
+@import '@fontsource/press-start-2p';
+
+:root {
+  --paper: #f7f5ee;
+  --white: #ffffff;
+  --ink: #091528;
+  --ink-soft: #34425a;
+  --muted: #6f7888;
+  --line: #c6ccd4;
+  --line-soft: #e4e6e8;
+  --blue: #168bea;
+  --blue-light: #d9efff;
+  --cyan: #7de7de;
+  --cyan-light: #dcfaf5;
+  --yellow: #ffd438;
+  --yellow-light: #fff2ac;
+  --coral: #ff6155;
+  --coral-light: #ffe1dc;
+  --green: #24b978;
+  --green-light: #d7f5e6;
+  --purple: #6655d9;
+  --purple-light: #e8e4ff;
+  --error: #cb3441;
+  --focus: #075da4;
+  --scrim: rgb(9 21 40 / 62%);
+  --font-body: 'Space Grotesk Variable', 'Segoe UI', sans-serif;
+  --font-data: 'IBM Plex Mono', Consolas, monospace;
+  --font-pixel: 'Press Start 2P', 'IBM Plex Mono', monospace;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  background: var(--paper);
+  overflow-x: clip;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+img,
+svg {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-style: normal;
+}
+
+::selection {
+  color: var(--white);
+  background: var(--ink);
+}

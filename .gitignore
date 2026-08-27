@@ -1,0 +1,17 @@
+# Dependencies and generated builds
+**/node_modules/
+**/dist/
+**/.vite/
+*.log
+
+# Local tooling
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Design references kept locally, not redistributed
+current_ambassador_Portal_UI/
+ui_desing_inspiration/
+backboard_assests/
+assests/
+
