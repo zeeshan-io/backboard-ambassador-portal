@@ -468,6 +468,9 @@ final presentation.
 
 ## Asset collection checklist
 
+The detailed collection, naming, upload, animation-state, and licensing brief is
+maintained in `ASSET_REQUIREMENTS.md`.
+
 ### Priority 0: collect before signup implementation
 
 | Asset | Format | Why it is needed |
