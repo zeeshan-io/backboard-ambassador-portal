@@ -24,6 +24,8 @@ import {
 } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 import { PixelIcon } from './PixelIcon'
+import { SignupPage } from './SignupPage'
+import { HouseAssignmentPage } from './HouseAssignmentPage'
 import './App.css'
 
 type CopyState = 'idle' | 'success' | 'error'
@@ -175,7 +177,7 @@ function WelcomeIntro({ onDismiss }: { onDismiss: () => void }) {
   )
 }
 
-function App() {
+function DashboardApp() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [introVisible, setIntroVisible] = useState(
     () => !window.matchMedia('(prefers-reduced-motion: reduce)').matches,
@@ -501,6 +503,42 @@ function RideauChallenge({ onPlay }: { onPlay: () => void }) {
       <button type="button" onClick={onPlay}>Play 60-second sprint <ArrowRight size={15} /></button>
     </article>
   )
+}
+
+function App() {
+  const [view, setView] = useState<'signup' | 'combine' | 'dashboard'>(() => {
+    if (window.location.hash === '#dashboard') return 'dashboard'
+    if (window.location.hash === '#combine') return 'combine'
+    return 'signup'
+  })
+
+  const showCombine = () => {
+    window.history.replaceState(null, '', '#combine')
+    setView('combine')
+    window.scrollTo({ top: 0, behavior: 'auto' })
+  }
+
+  const showSignup = () => {
+    window.history.replaceState(null, '', window.location.pathname)
+    setView('signup')
+    window.scrollTo({ top: 0, behavior: 'auto' })
+  }
+
+  const showDashboard = () => {
+    window.history.replaceState(null, '', '#dashboard')
+    setView('dashboard')
+    window.scrollTo({ top: 0, behavior: 'auto' })
+  }
+
+  if (view === 'signup') {
+    return <SignupPage onPreviewDashboard={showDashboard} onStartCombine={showCombine} />
+  }
+
+  if (view === 'combine') {
+    return <HouseAssignmentPage onBack={showSignup} onComplete={showDashboard} />
+  }
+
+  return <DashboardApp />
 }
 
 export default App

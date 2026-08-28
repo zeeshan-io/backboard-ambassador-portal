@@ -201,5 +201,9 @@ responsive from small mobile widths through desktop layouts, respects reduced
 motion, avoids gradients, and keeps the ambassador workflow above the optional
 game layer.
 
-The next phase should refine the chosen dashboard direction before expanding
-the other portal screens or building the Rideau Sprint interaction.
+The product direction, signup concept, house assignment flow, asset checklist,
+and implementation order are maintained in `DESIGN_DIRECTION.md`.
+
+The next implementation milestone is the signup experience, followed by the
+Scouting Combine and house reveal. Dashboard and remaining portal screens will
+follow after that entry sequence is validated.
